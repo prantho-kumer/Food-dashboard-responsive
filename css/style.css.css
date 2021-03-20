@@ -67,6 +67,7 @@ span.main-nav-icon {
 }
 .main-header li.nav-item {
   display: flex;
+  justify-content: flex-end;
 }
 a.nav-link {
   display: flex;
@@ -93,7 +94,7 @@ a.nav-link {
 }
 
 
-button#sidebar-toggle-btn {
+#sidebar-toggle-btn {
   display: none;
   background-color: #6966cc;
   position: absolute;
@@ -164,12 +165,11 @@ span.sidebar-nav-icon {
   border-radius: 50%;
 }
 span.sidebar-nav-icon i{
-  position: relative;
-    top: 2px;
   font-size: 14px;
   
 }
-i.fas.fa-shopping-cart{
+
+i.icon-cart{
   position: relative;
   top: 7px;
   left: 7px;
@@ -262,6 +262,9 @@ span.status-single-icon i {
   padding: 16px;
   border-radius: 50%;
 }
+.status-details {
+  padding: 10px;
+}
 h5.status-title {
   font-size: 16px;
   margin: 0;
@@ -347,7 +350,8 @@ td {
   border-bottom: 3px solid var(--prmary-color);
 }
 .detail-order div#nav-tabContent{
-  height: 480px;
+  height:400px;
+  padding-bottom: 140px;
   overflow: scroll;
   overflow-x: hidden;
 
@@ -385,12 +389,14 @@ p.item-cat {
 
 /* total */
 .total {
-  position: relative;
-    bottom: 0px;
+  position: absolute;
+  right: 15px;
+  width: 90%;
+    bottom: 15px;
     z-index: 1;
     background: #fff;
   border-radius: 25px;
-  box-shadow: -1px 0 15px #2121213a;
+  box-shadow: -1px 0 15px #ffffff3a;
   padding: 15px;
 
 
@@ -416,9 +422,19 @@ button.btn.total-btn {
 .order-progress, .review-wrapper{
   padding-top: 5%;
 }
+.detail-order div#nav-tabContent::-webkit-scrollbar {
+  width: 3px;
+}
+
+ 
+.detail-order div#nav-tabContent::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+
 
 /* responsive css */
-
 
 @media (max-width: 1025.98px) { 
 
@@ -436,4 +452,17 @@ button.btn.total-btn {
   }
 
  }
+ @media (max-width: 767.98px) { 
+
+  .detail-order .card-custom{
+    position: relative;
+    top: 0;
+   
+  }
+  .grid-content-center{
+    display: grid;
+    justify-content: center;
+  }
+
+  }
 
