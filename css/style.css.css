@@ -96,10 +96,14 @@ a.nav-link {
 
 #sidebar-toggle-btn {
   display: none;
+  color: #fff;
   background-color: #6966cc;
   position: absolute;
   top: 120px;
   right: -30px;
+}
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
 }
 
 .sidebar-top-img {
